@@ -19,6 +19,7 @@
 body {
   background-color: #323232;
   font-family: Avenir;
+  box-sizing: border-box;
 }
 
 /* Navbar styling with directory list */
@@ -473,11 +474,6 @@ body {
     font-size: 0.87rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__date {
-    font-size: 0.87rem;
-  }
-}
 .concert-list__venue {
   margin-top: 0.5rem;
   font-size: 0.81rem;
@@ -488,22 +484,12 @@ body {
     font-size: 0.87rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__venue {
-    font-size: 0.87rem;
-  }
-}
 .concert-list__location {
   margin-top: 0.5rem;
   font-size: 0.81rem;
   color: #000000;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__location {
-    font-size: 0.87rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
   .concert-list__location {
     font-size: 0.87rem;
   }
