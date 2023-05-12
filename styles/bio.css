@@ -338,7 +338,6 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  width: 100%;
   color: #323232;
   font-weight: 700;
   margin: 1rem 0rem;
@@ -624,7 +623,7 @@ body {
   height: 2.25rem;
   border-radius: 50%;
   vertical-align: middle;
-  opacity: 10%;
+  opacity: 7%;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
   .comment-image {
@@ -638,11 +637,11 @@ body {
     height: 3rem;
   }
 }
-.comment #comment-container {
+.comment-container {
   padding: 0.5rem;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
-  .comment #comment-container {
+  .comment-container {
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
@@ -652,7 +651,7 @@ body {
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
-  .comment #comment-container {
+  .comment-container {
     padding-left: 25%;
     padding-right: 25%;
     width: 100%;
@@ -728,7 +727,7 @@ body {
     font-size: 0.75rem;
   }
 }
-.comment #name-input {
+.comment .comment-form__name {
   min-width: 100%;
   min-height: 2.25rem;
   border-radius: 0.26rem;
@@ -738,16 +737,16 @@ body {
   margin-bottom: 0.5rem;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
-  .comment #name-input {
+  .comment .comment-form__name {
     min-height: 3rem;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
-  .comment #name-input {
+  .comment .comment-form__name {
     min-height: 3rem;
   }
 }
-.comment #comment-input {
+.comment .comment-form__text {
   min-width: 100%;
   min-height: 5rem;
   border-radius: 0.26rem;
@@ -755,16 +754,16 @@ body {
   margin-bottom: 0.5rem;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
-  .comment #comment-input {
+  .comment .comment-form__text {
     height: 6rem;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
-  .comment #comment-input {
+  .comment .comment-form__text {
     height: 8rem;
   }
 }
-.comment #submit-btn {
+.comment .comment-form__btn {
   width: 100%;
   min-height: 2.25rem;
   color: #FFFFFF;
@@ -772,17 +771,17 @@ body {
   border-radius: 0.26rem;
   cursor: pointer;
 }
-.comment #submit-btn:hover {
+.comment .comment-form__btn:hover {
   background-color: #000000;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
-  .comment #submit-btn {
+  .comment .comment-form__btn {
     width: 30%;
     margin-left: 70%;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
-  .comment #submit-btn {
+  .comment .comment-form__btn {
     width: 30%;
     margin-left: 70%;
   }

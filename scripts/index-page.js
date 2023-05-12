@@ -11,29 +11,7 @@
 console.log("herere")
 apiKey = "5218b745-34db-4023-b4da-1a32e81e281d";
 let url = `https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`;
-// function commentsArray (){
-// const arrayOfComments = axios.get("https://project-1-api.herokuapp.com/comments?api_key=5218b745-34db-4023-b4da-1a32e81e281d" )
 
-// .then(response => {
-//   // console.log(response);
-//   displayAllComments(response.data);
-//     // console.log(typeof arrayOfComments);
-//       response.data.sort((a, b) => {
-//         return b.posted - a.posted;
-//       });
-
-
- 
-
-// })
-
-
-
-// .catch(error =>{
-//   console.log(error);
-// });
-
-// }
 const commentsArray = (url) => {
   axios
   .get (url)
@@ -52,10 +30,10 @@ const commentsArray = (url) => {
 commentsArray(url);
 
 
-
+let imgUrl = "../assets/Images/Mohan-muruge.jpg"
 // Display a comment on the page
 function displayComment(comment) {
-  const container = document.getElementById('comment-container');
+  const container = document.querySelector('.comment-container');
 
 
   const commentElem = document.createElement('div');
@@ -64,7 +42,7 @@ function displayComment(comment) {
 
   const imgElem = document.createElement('img');
   imgElem.classList.add('comment-image');
-  imgElem.setAttribute('src', comment.url);
+  imgElem.setAttribute('src', "../assets/Images/Mohan-muruge.jpg");
   commentElem.appendChild(imgElem);
 
   const nameElem = document.createElement('h3');
@@ -87,7 +65,7 @@ function displayComment(comment) {
 
 // Display all comments on the page
 function displayAllComments(arrayOfComments) {
-  const container = document.getElementById('comment-container');
+  const container = document.querySelector('.comment-container');
   container.innerHTML = '';
  
 
@@ -96,33 +74,10 @@ function displayAllComments(arrayOfComments) {
   });
 }
 
-// Add a new comment
-// function addComment(event) {
-//   event.preventDefault(); // prevent page from reloading
-
-//   const nameInput = document.getElementById('name-input');
-//   const commentInput = document.getElementById('comment-input');
-
-//   const comment = {
-//     url: "../assets/Images/Mohan-muruge.jpg",
-//     name: nameInput.value,
-//     timestamp: (new Date()).toLocaleDateString(),
-//     comment: comment.value,
-//   };
-
-//   comments.unshift(comment);
-//   nameInput.value = '';
-//   commentInput.value = '';
-
-//   displayAllComments();
-// }
 
 
 function postComment (name,comment){
-  // const nameInput = document.getElementById('name-input').value;
-  // const commentInput = document.getElementById('comment-input').value;
-  // console.log(nameInput)
-  
+
   let newCommentObj = {
     name: name,
     comment: comment,
@@ -153,32 +108,6 @@ commentform.addEventListener('submit', (e) => {
   // e.target.name.value
   postComment(e.target.name.value, e.target.comment.value);
 });
-
-// Display default comments on page load
-// displayAllComments();
-
-
-
-
-//Adding all comment section into one div
-// const container = document.getElementById('comment-container');
-// const InfoComment = document.createElement('div');
-// InfoComment.classList.add('comment-Info');
-// container.appendChild(InfoComment);
-
-
-// //Appending comments element in created div
-// commentElement = document.querySelector('.comment-element');
-// InfoComment.appendChild(commentElement);
-
-
-// commentElement = document.querySelector('.comment-element');
-// InfoComment.appendChild(commentElement);
-
-// commentElement = document.querySelector('.comment-element');
-// InfoComment.appendChild(commentElement);
-
-
 
 
 

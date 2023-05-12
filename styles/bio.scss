@@ -100,7 +100,6 @@ opacity:50%;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight:700 ;
-  width: 100%;
   color: $primaryBlack;
   font-weight: 700;
   margin: 1rem 0rem;
@@ -387,7 +386,7 @@ font-size: 0.81rem;
   height: 2.25rem;
   border-radius: 50%;
   vertical-align:middle;
-  opacity: 10%;
+  opacity: 7%;
   
   
   @include tablet {
@@ -402,7 +401,7 @@ font-size: 0.81rem;
   
 
 }
-#comment-container{
+&-container{
 padding: 0.5rem;
 
 @include tablet{
@@ -496,11 +495,11 @@ padding: 0.5rem;
 }
 
 }
-#name-input{
+.comment-form__name{
   min-width: 100%;
   min-height: 2.25rem;
   border-radius: 0.26rem;
-  background-color:$Mercury;
+  background-color: $Mercury;
   font-weight: 400;
   color: $Black;
   margin-bottom: 0.5rem;
@@ -513,7 +512,7 @@ padding: 0.5rem;
     min-height: 3rem;
   }
 } 
-#comment-input{
+.comment-form__text{
   min-width: 100%;
   min-height: 5rem;
   border-radius: 0.26rem;
@@ -526,7 +525,7 @@ padding: 0.5rem;
     height: 8rem;
   }
 }
-#submit-btn{
+.comment-form__btn{
   width: 100%;
   min-height: 2.25rem;
   color: $white;
