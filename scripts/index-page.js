@@ -1,17 +1,11 @@
 
 
-// // Array of default comments
-
-// // const comments = [
-// //   { url:"../assets/Images/Mohan-muruge.jpg" , name: 'Connor Walton', timestamp:  '02/17/2021', text: 'This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.' },
-// //   { url:"../assets/Images/Mohan-muruge.jpg" , name: 'Emilie Beach', timestamp:  '01/09/2021', text: 'I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.  ' },
-// //   { url:"../assets/Images/Mohan-muruge.jpg" , name: 'Miles Acosta', timestamp:  '12/20/2020', text: 'I cant stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Cant get enough.' },
-// // ];
-
-console.log("herere")
+//Api key
 apiKey = "5218b745-34db-4023-b4da-1a32e81e281d";
 let url = `https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`;
 
+
+//Making request to Api
 const commentsArray = (url) => {
   axios
   .get (url)
@@ -31,6 +25,8 @@ commentsArray(url);
 
 
 let imgUrl = "../assets/Images/Mohan-muruge.jpg"
+
+
 // Display a comment on the page
 function displayComment(comment) {
   const container = document.querySelector('.comment-container');
@@ -75,7 +71,7 @@ function displayAllComments(arrayOfComments) {
 }
 
 
-
+//Posting request to Api 
 function postComment (name,comment){
 
   let newCommentObj = {

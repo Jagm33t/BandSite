@@ -1,15 +1,9 @@
 
-// //Content stored in Array
-// const shows =[
-// {date:"Mon Sept 06 2021",venue:"Ronald Lane",location:"San Francisco, CA" } ,
-// {date:"Tue Sept 21 2021",venue:"Pier 3 East",location:"San Francisco, CA"},
-// {date:"Fri Oct 15 2021",venue:"View Lounge",location:"San Francisco, CA"},
-// {date:"Sat Nov 06 2021",venue:"Hyatt Agency",location:"San Francisco, CA"},
-// {date:"Fri Nov 26 2021",venue:"Moscow Center",location:"San Francisco, CA"},
-// {date:"Wed Dec 15 2021",venue:"Press Club",location:"San Francisco, CA"},
-// ];
+//APi key
 apiKey = "5218b745-34db-4023-b4da-1a32e81e281c";
 
+
+//Making request to Api
 function getShowDates() {
   const showsTimes = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=5218b745-34db-4023-b4da-1a32e81e281c");
 
@@ -28,6 +22,7 @@ function getShowDates() {
   });
 }
 getShowDates();
+
  
 //Selecting classes in comment section
 const concertHead = document.querySelector('.concert-head');
