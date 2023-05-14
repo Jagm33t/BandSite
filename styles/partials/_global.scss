@@ -207,6 +207,7 @@ body{
  /* Styling three logos in first part */
 &-icons{
   margin-top: 0.8rem;
+ 
 
 }
 }
@@ -275,6 +276,12 @@ margin: 1rem 0rem 0rem 0rem;
     font-size: 0.87rem;
     margin:0;
     line-height: 1.11rem;
+  }
+
+  &__mail{
+    text-decoration: none;
+    color: $Alabaster;
+    cursor: pointer;
   }
   }
 

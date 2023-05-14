@@ -11,7 +11,7 @@ const commentsArray = (url) => {
   .get (url)
   .then(response => {
 
-    console.log(response.data)
+    
     response.data.sort((a, b) => {
       return b.timestamp - a.timestamp;
     });
@@ -56,8 +56,22 @@ function displayComment(comment) {
   textElem.classList.add('comment-area');
   commentElem.appendChild(textElem);
 
+  //Adding like button to every comment
+  const likeBtn = document.createElement('button');
+  likeBtn.classList.add('comment-like');
+  likeBtn.textContent = 'Like';
+  commentElem.appendChild(likeBtn);
+
+  //Adding delete button to every comment
+  const deleteBtn = document.createElement('button');
+  deleteBtn.classList.add('comment-delete');
+  deleteBtn.textContent = 'Delete';
+  commentElem.appendChild(deleteBtn);
+
+
   container.appendChild(commentElem);
 }
+
 
 // Display all comments on the page
 function displayAllComments(arrayOfComments) {
@@ -126,7 +140,6 @@ function validInput(event){
     input.classList.add("noerror");
   }
 }
-
 
 
 

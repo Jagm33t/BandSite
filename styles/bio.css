@@ -251,6 +251,11 @@ body {
     line-height: 1.11rem;
   }
 }
+.foot-second__mail {
+  text-decoration: none;
+  color: #FAFAFA;
+  cursor: pointer;
+}
 .foot-third {
   margin-top: 3.5rem;
 }
@@ -514,6 +519,11 @@ body {
 .gallery-photos__types {
   max-width: 95%;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.gallery-photos__types:hover {
+  filter: grayscale(0%);
 }
 @media (max-width: 1280px) and (min-width: 768px) {
   .gallery-photos__types {
@@ -617,6 +627,15 @@ body {
   .comment-area {
     padding-left: 10%;
   }
+}
+.comment-like, .comment-delete {
+  color: #FFFFFF;
+  background-color: #323232;
+  border-radius: 0.26rem;
+  cursor: pointer;
+}
+.comment-like:hover, .comment-delete:hover {
+  background-color: #000000;
 }
 .comment-image {
   width: 2.25rem;

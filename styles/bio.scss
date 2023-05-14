@@ -282,7 +282,12 @@ opacity:50%;
 &-photos__types{
   max-width: 95%;
   margin:0.5rem 0.5rem 0.5rem 0.5rem;
-  
+  cursor: pointer;
+  filter: grayscale(100%);
+
+  &:hover{
+    filter: grayscale(0%);
+  }
   @include tablet{
     max-width: 28%;
     margin: 0rem;
@@ -380,6 +385,15 @@ font-size: 0.81rem;
 @include desktop{
   padding-left:10%;
 }
+}
+&-like , &-delete{
+  color: $white;
+  background-color: $primaryBlack;
+  border-radius: 0.26rem;
+  cursor: pointer;
+  &:hover{
+    background-color:$Black;
+  }
 }
 &-image{
   width: 2.25rem;

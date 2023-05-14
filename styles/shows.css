@@ -251,6 +251,11 @@ body {
     line-height: 1.11rem;
   }
 }
+.foot-second__mail {
+  text-decoration: none;
+  color: #FAFAFA;
+  cursor: pointer;
+}
 .foot-third {
   margin-top: 3.5rem;
 }
