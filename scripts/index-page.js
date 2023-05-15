@@ -11,7 +11,7 @@ const commentsArray = (url) => {
   .get (url)
   .then(response => {
 
-    
+    //sorting comment from new to old
     response.data.sort((a, b) => {
       return b.timestamp - a.timestamp;
     });
@@ -56,17 +56,28 @@ function displayComment(comment) {
   textElem.classList.add('comment-area');
   commentElem.appendChild(textElem);
 
-  //Adding like button to every comment
+  //Creating Like button on every comment
   const likeBtn = document.createElement('button');
   likeBtn.classList.add('comment-like');
   likeBtn.textContent = 'Like';
   commentElem.appendChild(likeBtn);
 
-  //Adding delete button to every comment
+
+  //Calling event when Like button is pressed
+  likeBtn.addEventListener('click', () => {
+    likeComment(comment.id, likeBtn);
+  });
+
+  //Adding delete button on every button
   const deleteBtn = document.createElement('button');
   deleteBtn.classList.add('comment-delete');
   deleteBtn.textContent = 'Delete';
   commentElem.appendChild(deleteBtn);
+
+  //Calling event when delete button is pressed
+  deleteBtn.addEventListener('click', () => {
+    deleteComment(comment.id, commentElem);
+  });
 
 
   container.appendChild(commentElem);
@@ -82,6 +93,36 @@ function displayAllComments(arrayOfComments) {
   arrayOfComments.forEach(comment => {
     displayComment(comment);
   });
+}
+
+
+// Updating when pressed Like button
+function likeComment(commentId, likeBtn) {
+  axios
+    .put(`https://project-1-api.herokuapp.com/comments/${commentId}/like?api_key=${apiKey}`)
+    .then((response) => {
+      const updatedLikes = response.data.likes;
+      likeBtn.textContent = ` ${updatedLikes}`;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+// Deleting comment when delete button is pressed
+function deleteComment(commentId, commentElem) {
+  axios
+    .delete(`https://project-1-api.herokuapp.com/comments/${commentId}/?api_key=${apiKey}`)
+    .then(() => {
+      commentElem.remove();
+
+
+    })
+    .catch((error) => {
+      console.error(error);
+
+
+    });
 }
 
 
