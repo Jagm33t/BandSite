@@ -1,0 +1,531 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/font/AvenirNextLTPro-Regular.otf) format("OpenType");
+  src: url(../../assets/font/alternativefiles/AvenirNextLTPro.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/font/AvenirNextLTPro-Demi.otf) format("OpenType");
+  src: url(../../assets/font/alternativefiles/AvenirNextLTProDemi.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/font/AvenirNextLTPro-Bold.otf) format("OpenType");
+  src: url(../../assets/font/alternativefiles/AvenirNextLTProBold.ttf) format("truetype");
+  font-weight: 700;
+}
+body {
+  background-color: #323232;
+  font-family: Avenir;
+}
+
+/* Navbar styling with directory list */
+.navbar {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .navbar {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+}
+.navbar-logo {
+  height: 1.25rem;
+  width: 7.5rem;
+  padding-top: 2%;
+  padding-left: 35%;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .navbar-logo {
+    padding-left: 30%;
+    margin-top: 16%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .navbar-logo {
+    padding-left: 100%;
+    margin-top: 15%;
+  }
+}
+.navbar-directory__content {
+  width: 90%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-left: 0%;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .navbar-directory__content {
+    justify-content: center;
+    width: 90%;
+    margin-left: 10%;
+    padding-left: 2.5rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .navbar-directory__content {
+    justify-content: center;
+    width: 90%;
+    margin-left: 60%;
+    padding-left: 2.5rem;
+  }
+}
+.navbar-directory__list {
+  list-style-type: none;
+  text-decoration: none;
+  color: #E1E1E1;
+  font-size: 1.3rem;
+  height: 3rem;
+  font-weight: 400;
+}
+.navbar-directory__list:hover {
+  color: #FFFFFF;
+  padding-bottom: 0.8rem;
+  border-bottom: 5px solid #FFFFFF;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .navbar-directory__list {
+    margin-right: 2rem;
+  }
+  .navbar-directory__list:hover {
+    padding-bottom: 1.3rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .navbar-directory__list {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
+  .navbar-directory__list:hover {
+    padding-bottom: 1.65rem;
+  }
+}
+
+#active {
+  border-bottom: 5px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  #active {
+    border-bottom: 5px solid #FAFAFA;
+    padding-bottom: 1.3rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  #active {
+    border-bottom: 5px solid #FAFAFA;
+    padding-bottom: 1.65rem;
+  }
+}
+
+/* Footer section with styling three parts */
+.foot {
+  background-color: #323232;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.37rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  /* Styling all three parts in footer */
+  /* Targeting each line in Second part */
+  /* Bandsite logo styling in footer */
+  /* Copyright section */
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .foot {
+    background-position: 95% 16%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .foot {
+    padding-left: 6%;
+    padding-bottom: 2%;
+  }
+}
+.foot-first {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* Styling three logos in first part */
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .foot-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 60%;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .foot-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 40%;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+    padding-top: 1%;
+  }
+}
+.foot-first-icons {
+  margin-top: 0.8rem;
+}
+.foot-first, .foot-second, .foot-third {
+  margin: 1rem 0rem 2rem 0rem;
+}
+.foot-second__first, .foot-second__second, .foot-second__third {
+  margin: 0rem 0rem 1rem 0rem;
+  line-height: 1.25rem;
+}
+.foot-logo {
+  width: 7.5rem;
+  height: 1.25rem;
+  position: absolute;
+  display: none;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .foot-logo {
+    display: block;
+    margin: -1rem 10rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .foot-logo {
+    display: block;
+    margin: -1rem 32rem;
+  }
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .foot-logo1 {
+    display: none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .foot-logo1 {
+    display: none;
+  }
+}
+.foot-second__first p, .foot-second__second p, .foot-second__third p {
+  margin: 1rem 0rem 0rem 0rem;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .foot-second {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    font-size: 0.87rem;
+    margin: 0;
+    line-height: 1.11rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .foot-second {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 65%;
+    font-size: 0.87rem;
+    margin: 0;
+    line-height: 1.11rem;
+  }
+}
+.foot-third {
+  margin-top: 3.5rem;
+}
+
+.hero {
+  width: 100%;
+  height: 16.5rem;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .hero {
+    height: 28rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .hero {
+    height: 42rem;
+  }
+}
+.hero__head {
+  color: #FFFFFF;
+  line-height: 2rem;
+  font-family: "Avenir";
+  font-size: 1.5rem;
+  display: inline;
+  position: absolute;
+  margin: 3rem 1rem;
+  z-index: 1;
+  max-width: 70%;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .hero__head {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    position: absolute;
+    margin: 7rem 2rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .hero__head {
+    max-width: 35%;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    position: absolute;
+    margin: 15rem 5rem;
+    font-weight: 600;
+  }
+}
+.hero__subhead {
+  color: #FFFFFF;
+  line-height: 1.37rem;
+  font-family: "Avenir";
+  font-size: 0.87rem;
+  display: inline;
+  position: absolute;
+  margin: 1rem 1rem;
+  z-index: 1;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .hero__subhead {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    position: absolute;
+    margin: 4rem 2rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .hero__subhead {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-size: 600;
+    position: absolute;
+    margin: 10rem 5rem;
+  }
+}
+.hero__soundtrack {
+  display: inline;
+  position: absolute;
+  margin: 7.5rem 1rem;
+  z-index: 1;
+  font-weight: 400;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .hero__soundtrack {
+    position: absolute;
+    margin: 18rem 2rem;
+    max-width: 52%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .hero__soundtrack {
+    min-width: 30%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    position: absolute;
+    margin: 15rem 40rem;
+  }
+}
+.hero__container {
+  background-image: url(../assets/Images/Photo-gallery-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 16.5rem;
+  max-width: 100%;
+  position: relative;
+  opacity: 50%;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .hero__container {
+    height: 28rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .hero__container {
+    height: 42rem;
+  }
+}
+
+.concert {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1rem 0rem 1rem 0rem;
+  border: 1px solid #FFFFFF;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.concert-head {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+.concert-show {
+  padding: 0rem 1rem 0rem 1rem;
+  display: none;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-show {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.87rem;
+    width: 83%;
+    color: #AFAFAF;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-show {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.87rem;
+    color: #AFAFAF;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    width: 83%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list {
+    width: 60%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.concert-list__element {
+  border-bottom: 1px solid #E1E1E1;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.concert-list__element:hover {
+  background-color: #FAFAFA;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.concert-list__guide {
+  color: #AFAFAF;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  font-size: 0.81rem;
+  margin-bottom: 0rem;
+  list-style-type: none;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__guide {
+    display: none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__guide {
+    display: none;
+  }
+}
+.concert-list__date {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 0.81rem;
+  color: #000000;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__date {
+    font-size: 0.87rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__date {
+    font-size: 0.87rem;
+  }
+}
+.concert-list__venue {
+  margin-top: 0.5rem;
+  font-size: 0.81rem;
+  color: #000000;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__venue {
+    font-size: 0.87rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__venue {
+    font-size: 0.87rem;
+  }
+}
+.concert-list__location {
+  margin-top: 0.5rem;
+  font-size: 0.81rem;
+  color: #000000;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__location {
+    font-size: 0.87rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__location {
+    font-size: 0.87rem;
+  }
+}
+.concert-list__buyBtn {
+  background-color: #323232;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.concert-list__buyBtn:hover {
+  background-color: #000000;
+}
+@media (max-width: 1280px) and (min-width: 768px) {
+  .concert-list__buyBtn {
+    max-width: 25%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .concert-list__buyBtn {
+    max-width: 25%;
+  }
+}/*# sourceMappingURL=shows.css.map */

@@ -1,0 +1,561 @@
+
+@use "./partials/variables" as *;
+@use "./partials/mixin" as *;
+@use "./partials/fonts" as * ;
+@use "./partials/global" as * ;
+
+
+
+
+// /* Hero section with heading and background image */
+
+.hero{
+  width: 100%;
+  height: 13.5rem;
+
+  @include tablet{
+    height: 28rem ;
+  }
+  @include desktop{
+    height: 42rem;
+    
+  }
+
+  &-head{
+    color: $white;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+   display: inline;
+   position: absolute;
+   margin: 5rem 1rem;
+   z-index: 1;
+  
+   
+   @include tablet{
+    font-size: 4rem;
+    line-height: 4.25rem;
+    position: absolute;
+    margin: 12rem 2rem;
+  
+   }
+    @include desktop{
+      font-size: 4rem;
+      line-height: 4.25rem;
+      position: absolute;
+      margin: 20rem 5rem;
+   
+    }
+  
+  }
+
+
+&-container{
+background-image: url(../assets/Images/hero-bio.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+height: 13.5rem;
+max-width: 100%;
+position: relative;
+opacity:50%;
+
+@include tablet{
+  height: 28rem;
+}
+@include desktop{
+  height: 42rem;
+}
+
+}
+
+}
+
+
+
+
+// /* About Section styling  */
+
+
+.about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:$Alabaster;
+  padding: 1.5rem 0rem 1rem 0rem;
+ 
+
+
+  @include tablet{
+    height: 10%;
+    padding-bottom:2.25rem;
+  }
+  
+ @include desktop{
+  width: 100%;
+  padding-bottom:2.25rem;
+ }
+
+
+&-head{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight:700 ;
+  width: 100%;
+  color: $primaryBlack;
+  font-weight: 700;
+  margin: 1rem 0rem;
+  box-sizing: border-box;
+
+  @include tablet{
+    font-size: 2.25rem;
+    padding: 3rem 0rem 2.25rem 4rem;
+    margin: 0;
+  }
+  @include desktop{
+    font-size: 2.25rem;
+    padding: 3rem 0rem 2.25rem 4rem;
+    margin: 1rem 0rem;
+  }
+}
+
+
+&-container{
+  
+  @include tablet{
+    max-width: 80%;
+    padding-left: 3rem;
+  }
+  @include desktop{
+    max-width: 75%;
+   
+  }
+}
+
+
+&-container__pic{
+  max-width: 96%;
+  margin-left: 0.3rem;
+  
+
+  
+  @include tablet{
+    max-width: 90%;
+   margin-left: 4rem;
+  }
+  @include desktop{
+    max-width: 95%;
+    margin-left: 12rem;
+   
+  }
+
+}
+
+
+&-para1,&-para2{
+  font-weight: 600;
+  color: $Black;
+  margin:1rem 0rem 1rem 0rem;
+  @include tablet {
+    max-width: 53%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-left: 7rem ;
+  }
+    
+    @include desktop {
+      max-width: 53%;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      max-width: 60%;
+      margin-left: 12rem ;
+  
+    }
+}
+&-para2{
+  font-size: 0.87rem;
+}
+&-para1{
+  max-width: 95%;
+  font-size: 0.875rem;
+  line-height: 1.37rem;
+
+@include tablet {
+  max-width: 72%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+  
+  @include desktop {
+    max-width: 53%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-width: 60%;
+
+  }
+}
+// /* Styling the heading of last paragraphs span element  */
+&-beeshead{
+  margin: 2rem 0rem;
+  font-size:1rem;
+  font-weight: 600;
+
+  @include tablet{
+    margin-left: 7rem;
+  }
+  @include desktop{
+    margin-left: 12rem;
+  }
+}
+
+
+&-para4{
+
+  @include tablet {
+    padding-left: 3rem;
+  }
+  @include desktop{
+    padding-left: 3rem;
+  }
+}
+
+// /* Styling display property to last two paragraph in about section  */
+&-bottom{
+  font-size: 0.81rem;
+  line-height: 1.12rem;
+  font-family: 'Avenir';
+  font-weight: 400;
+  color:$primaryBlack;
+
+
+  @include tablet{
+    font-size: 0.87rem;
+    line-height:1.37 ;
+    display: flex;
+    max-width: 70%;
+    margin-left: 7rem ;
+    
+  }
+  @include desktop{
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    display: flex;
+    max-width: 70%;
+    margin-left: 12rem ;
+
+  }
+}
+}
+
+
+
+
+
+ /* Gallery section with pictures */
+
+.gallery{
+  background-color:$Mercury;
+  border: 1px solid $white;
+ 
+  
+@include tablet{
+  padding-left: 6%;
+}
+@include desktop{
+  padding-left: 10%;
+  margin-top: 0rem;
+
+}
+
+&-head{
+  color: $primaryBlack;
+  padding: 1rem 0rem 1.5rem 1rem;
+  font-size:2.25rem;
+  font-weight: 700;
+
+  @include tablet{
+    
+    padding-top: 2rem;
+  }
+  @include desktop{
+    padding-top: 4rem;
+  }
+}
+&-photos__types{
+  max-width: 95%;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  
+  @include tablet{
+    max-width: 28%;
+    margin: 0rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  } 
+
+  @include desktop{
+    max-width: 27%;
+    padding-left: 1%;
+    padding-bottom: 1rem;
+  }
+  
+}
+}
+
+//If input filled remains empty
+.error{
+  border:1px solid $red;
+}
+.noerror{
+  border:0.06rem solid $Mercury ;
+}
+
+
+// Comment section styling
+
+.comment{
+min-width: 100%;
+min-height: 100%;
+background-color:$white;
+padding: 1rem 0rem 1rem 0rem;
+background-color: $white;
+
+
+&-head{
+  color: $primaryBlack;
+  font-size:1.55rem;
+  font-weight: 700;
+  margin-left: 1rem;
+
+  @include tablet {
+   font-size: 2.25rem;
+   line-height:2.75rem ;
+  }
+  @include desktop{
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+&-element{
+  border-top: 1px solid $Mercury;
+  border-bottom: 1px solid $Mercury;
+  padding: 5% 0% 5% 1%;
+}
+
+&-name{
+  display:inline-block;
+  font-size: 0.87rem;
+  font-weight: 600;
+  padding-left: 3%;
+
+  @include tablet{
+    padding-left: 2%;
+  }
+  @include desktop{
+    padding-left: 6%;
+  }
+  
+}
+&-time{
+  display: inline-block;
+  color: $Silver;
+  font-size: 0.81rem;
+  padding-left: 25%;
+
+  @include tablet{
+    padding-left: 60%;
+  }
+  @include desktop{
+    padding-left: 60%;
+  }
+
+}
+&-area{
+width: 83%;
+color: $primaryBlack;
+padding-left: 15%;
+font-weight: 400;
+font-size: 0.81rem;
+@include tablet{
+  padding-left:10%;
+}
+@include desktop{
+  padding-left:10%;
+}
+}
+&-image{
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  vertical-align:middle;
+  opacity: 10%;
+  
+  
+  @include tablet {
+    width: 3rem;
+    height: 3rem;
+  }
+  @include desktop {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  
+
+}
+#comment-container{
+padding: 0.5rem;
+
+@include tablet{
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+
+}
+
+
+@include desktop{
+  padding-left: 25%;
+  padding-right:25%;
+  width: 100%;
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+
+}
+}
+
+&-Info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+&-form{
+  
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem;
+  width: 100%;
+  min-height:2.25rem ;
+  box-sizing: border-box;
+  
+ 
+ 
+  @include tablet{
+ justify-content: center;
+ min-height:3rem;
+ padding: 1rem;
+  }
+  @include desktop{
+    justify-content: center;
+    min-height:3rem;
+    padding: 1rem;
+  }
+
+  &__photo{
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-top: 60%;
+  border-radius: 50%;
+  
+@include tablet{
+  width: 3rem;
+  height: 3rem;
+}
+@include desktop{
+  width: 3rem;
+  height: 3rem;
+}
+} 
+&__one{
+ padding-right: 4%;
+}
+&__two{
+  max-width: 85%;
+  
+  
+}
+&__label{
+  color: $Silver;
+  font-weight: 600;
+  font-size:0.62rem;
+  line-height: 1.5rem;
+
+  @include tablet {
+    font-size:0.75rem;
+  }
+  @include desktop{
+    font-size:0.75rem;
+  }
+  
+
+}
+
+}
+#name-input{
+  min-width: 100%;
+  min-height: 2.25rem;
+  border-radius: 0.26rem;
+  background-color:$Mercury;
+  font-weight: 400;
+  color: $Black;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+
+
+  @include tablet{
+    min-height: 3rem;
+  }
+  @include desktop{
+    min-height: 3rem;
+  }
+} 
+#comment-input{
+  min-width: 100%;
+  min-height: 5rem;
+  border-radius: 0.26rem;
+  background-color:$Mercury;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  @include tablet{
+    height: 6rem;
+  }
+  @include desktop{
+    height: 8rem;
+  }
+}
+#submit-btn{
+  width: 100%;
+  min-height: 2.25rem;
+  color: $white;
+  background-color: $primaryBlack;
+  border-radius: 0.26rem;
+  cursor: pointer;
+
+    &:hover{
+      background-color:$Black;
+    }
+
+  @include tablet{
+    width: 30%;
+    margin-left: 70%;
+    
+  }
+  @include desktop{
+    width: 30%;
+    margin-left: 70%;
+    
+  }
+  
+  
+
+}
+}
+  
+
+
