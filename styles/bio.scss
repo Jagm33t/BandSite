@@ -300,13 +300,6 @@ opacity:50%;
 }
 }
 
-//If input filled remains empty
-.error{
-  border:1px solid $red;
-}
-.noerror{
-  border:0.06rem solid $Mercury ;
-}
 
 
 // Comment section styling
@@ -334,7 +327,6 @@ background-color: $white;
     line-height: 2.75rem;
   }
 }
-
 &-element{
   border-top: 1px solid $Mercury;
   border-bottom: 1px solid $Mercury;
@@ -383,21 +375,11 @@ font-size: 0.81rem;
 }
 }
 &-image{
-  width: 2.25rem;
-  height: 2.25rem;
+  max-width: 3rem;
+  max-height: 3rem;
   border-radius: 50%;
   vertical-align:middle;
-  opacity: 10%;
   
-  
-  @include tablet {
-    width: 3rem;
-    height: 3rem;
-  }
-  @include desktop {
-    width: 3rem;
-    height: 3rem;
-  }
 
   
 
@@ -500,13 +482,13 @@ padding: 0.5rem;
 #name-input{
   min-width: 100%;
   min-height: 2.25rem;
+  border:0.06rem solid $Mercury ;
   border-radius: 0.26rem;
   background-color:$Mercury;
   font-weight: 400;
   color: $Black;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
-
 
   @include tablet{
     min-height: 3rem;
@@ -520,6 +502,7 @@ padding: 0.5rem;
   min-height: 5rem;
   border-radius: 0.26rem;
   background-color:$Mercury;
+  border:0.06rem solid $Mercury ;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
   @include tablet{
@@ -535,11 +518,6 @@ padding: 0.5rem;
   color: $white;
   background-color: $primaryBlack;
   border-radius: 0.26rem;
-  cursor: pointer;
-
-    &:hover{
-      background-color:$Black;
-    }
 
   @include tablet{
     width: 30%;

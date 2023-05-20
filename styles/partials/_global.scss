@@ -84,38 +84,23 @@ body{
   height: 3rem;
  font-weight: 400;
   
-
- &:hover{
-   color: $white;
-   padding-bottom: 0.8rem;
-   border-bottom: 5px solid $white;
- }
  @include tablet{
  margin-right: 2rem;
- &:hover{
-  
-  padding-bottom: 1.3rem;
 
-}
 
 }
 @include desktop{
   margin-right: 2rem;
   font-size: 1.2rem;
   
-  &:hover{
-  
-    padding-bottom: 1.65rem;
-  
-  }
   
 }
 }
 
 } 
 #active{
-  border-bottom: 5px solid $white;
-  color: $white;
+  border-bottom: 5px solid #FAFAFA;
+  color: #FFFFFF;
   font-weight: 600;
   padding-bottom: 0.8rem;
 
@@ -123,13 +108,13 @@ body{
 
 @include tablet{
   border-bottom: 5px solid $Alabaster;
-  padding-bottom:1.3rem;
+  padding-bottom:1.4rem;
 
   
 }
 @include desktop{
   border-bottom: 5px solid $Alabaster;
-  padding-bottom:1.65rem;
+  padding-bottom:1.5rem;
  
  
 }
@@ -165,10 +150,10 @@ body{
   justify-content: space-between;
   line-height: 1.37rem ;
   padding: 1rem 0.5rem 0rem 0.5rem;
-  
- 
- 
-
+  background-image: url(../assets/Logo/Logo-bandsite.svg);
+  background-repeat: no-repeat;
+  background-position: 0.5rem 45.5rem;
+  background-size: 11rem;
   
  @include tablet{
   background-position: 95% 16%;
@@ -176,12 +161,11 @@ body{
  @include desktop{
   padding-left: 6%;
   padding-bottom: 2%;
-  
+  background-position: 90% 15%;
  }
 &-first{
   font-weight: 700;
   font-size: 1.5rem;
- 
   
   @include tablet{
     display: flex;
@@ -201,7 +185,6 @@ body{
     padding-left: 1rem;
     font-size:1.7rem ;
     padding-top: 1%;
-    
   }
 
  /* Styling three logos in first part */
@@ -223,33 +206,10 @@ body{
 
 }
  /* Bandsite logo styling in footer */
-&-logo{
+&__logo{
   width: 7.5rem;
   height: 1.25rem;
-  position: absolute;
-  display: none;
-
-
-  @include tablet {
-    display: block;
-    margin: -1rem 10rem;
-  }
-  @include desktop{
-    display: block;
-    margin: -1rem 32rem;
-  }
 }
-
-&-logo1{
-
-  @include tablet {
-   display:none;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-
 &-second__first p,&-second__second p,&-second__third p {
 margin: 1rem 0rem 0rem 0rem;
 

@@ -33,7 +33,7 @@ body {
     padding-bottom: 1%;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .navbar {
     display: flex;
     padding-top: 1%;
@@ -52,7 +52,7 @@ body {
     margin-top: 16%;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .navbar-logo {
     padding-left: 100%;
     margin-top: 15%;
@@ -74,7 +74,7 @@ body {
     align-items: center;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .navbar-directory__content {
     justify-content: center;
     width: 90%;
@@ -90,31 +90,20 @@ body {
   height: 3rem;
   font-weight: 400;
 }
-.navbar-directory__list:hover {
-  color: #FFFFFF;
-  padding-bottom: 0.8rem;
-  border-bottom: 5px solid #FFFFFF;
-}
 @media (max-width: 1280px) and (min-width: 768px) {
   .navbar-directory__list {
     margin-right: 2rem;
   }
-  .navbar-directory__list:hover {
-    padding-bottom: 1.3rem;
-  }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .navbar-directory__list {
     margin-right: 2rem;
     font-size: 1.2rem;
   }
-  .navbar-directory__list:hover {
-    padding-bottom: 1.65rem;
-  }
 }
 
 #active {
-  border-bottom: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FAFAFA;
   color: #FFFFFF;
   font-weight: 600;
   padding-bottom: 0.8rem;
@@ -122,13 +111,13 @@ body {
 @media (max-width: 1280px) and (min-width: 768px) {
   #active {
     border-bottom: 5px solid #FAFAFA;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1.4rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   #active {
     border-bottom: 5px solid #FAFAFA;
-    padding-bottom: 1.65rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -141,6 +130,10 @@ body {
   justify-content: space-between;
   line-height: 1.37rem;
   padding: 1rem 0.5rem 0rem 0.5rem;
+  background-image: url(../assets/Logo/Logo-bandsite.svg);
+  background-repeat: no-repeat;
+  background-position: 0.5rem 45.5rem;
+  background-size: 11rem;
   /* Styling all three parts in footer */
   /* Targeting each line in Second part */
   /* Bandsite logo styling in footer */
@@ -151,10 +144,11 @@ body {
     background-position: 95% 16%;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .foot {
     padding-left: 6%;
     padding-bottom: 2%;
+    background-position: 90% 15%;
   }
 }
 .foot-first {
@@ -173,7 +167,7 @@ body {
     font-size: 1.7rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .foot-first {
     display: flex;
     flex-direction: row;
@@ -195,33 +189,9 @@ body {
   margin: 0rem 0rem 1rem 0rem;
   line-height: 1.25rem;
 }
-.foot-logo {
+.foot__logo {
   width: 7.5rem;
   height: 1.25rem;
-  position: absolute;
-  display: none;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .foot-logo {
-    display: block;
-    margin: -1rem 10rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .foot-logo {
-    display: block;
-    margin: -1rem 32rem;
-  }
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .foot-logo1 {
-    display: none;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .foot-logo1 {
-    display: none;
-  }
 }
 .foot-second__first p, .foot-second__second p, .foot-second__third p {
   margin: 1rem 0rem 0rem 0rem;
@@ -238,7 +208,7 @@ body {
     line-height: 1.11rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .foot-second {
     padding-left: 1rem;
     display: flex;
@@ -263,7 +233,7 @@ body {
     height: 28rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .hero {
     height: 42rem;
   }
@@ -271,7 +241,7 @@ body {
 .hero__head {
   color: #FFFFFF;
   line-height: 2rem;
-  font-family: "Avenir";
+  font-family: "AvenirBold";
   font-size: 1.5rem;
   display: inline;
   position: absolute;
@@ -287,20 +257,18 @@ body {
     margin: 7rem 2rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .hero__head {
-    max-width: 35%;
     font-size: 3.75rem;
     line-height: 4.25rem;
     position: absolute;
-    margin: 15rem 5rem;
-    font-weight: 600;
+    margin: 20rem 5rem;
   }
 }
 .hero__subhead {
   color: #FFFFFF;
   line-height: 1.37rem;
-  font-family: "Avenir";
+  font-family: "AvenirBold";
   font-size: 0.87rem;
   display: inline;
   position: absolute;
@@ -315,13 +283,12 @@ body {
     margin: 4rem 2rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .hero__subhead {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-size: 600;
+    font-size: 4rem;
+    line-height: 4.25rem;
     position: absolute;
-    margin: 10rem 5rem;
+    margin: 20rem 5rem;
   }
 }
 .hero__soundtrack {
@@ -329,22 +296,12 @@ body {
   position: absolute;
   margin: 7.5rem 1rem;
   z-index: 1;
-  font-weight: 400;
 }
 @media (max-width: 1280px) and (min-width: 768px) {
   .hero__soundtrack {
     position: absolute;
     margin: 18rem 2rem;
-    max-width: 52%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .hero__soundtrack {
-    min-width: 30%;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    position: absolute;
-    margin: 15rem 40rem;
+    width: 52%;
   }
 }
 .hero__container {
@@ -361,7 +318,7 @@ body {
     height: 28rem;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .hero__container {
     height: 42rem;
   }
@@ -370,162 +327,12 @@ body {
 .concert {
   box-sizing: border-box;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #FAFAFA;
   padding: 1rem 0rem 1rem 0rem;
-  border: 1px solid #FFFFFF;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert {
-    padding: 0rem 1rem 0rem 1rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  border: 1px solid blue;
 }
 .concert-head {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
-  padding-left: 1rem;
-}
-.concert-show {
-  padding: 0rem 1rem 0rem 1rem;
-  display: none;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-show {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.87rem;
-    width: 83%;
-    color: #AFAFAF;
-    font-weight: 600;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-show {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.87rem;
-    color: #AFAFAF;
-    font-weight: 600;
-    padding-bottom: 1rem;
-    width: 83%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list {
-    width: 60%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-.concert-list__element {
-  border-bottom: 1px solid #E1E1E1;
-  padding: 1rem 1rem 1rem 1rem;
-}
-.concert-list__element:hover {
-  background-color: #FAFAFA;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__element {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__element {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.concert-list__guide {
-  color: #AFAFAF;
-  font-weight: 600;
-  padding-top: 0.5rem;
-  font-size: 0.81rem;
-  margin-bottom: 0rem;
-  list-style-type: none;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__guide {
-    display: none;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__guide {
-    display: none;
-  }
-}
-.concert-list__date {
-  font-weight: 600;
-  margin-top: 0.5rem;
-  font-size: 0.81rem;
-  color: #000000;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__date {
-    font-size: 0.87rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__date {
-    font-size: 0.87rem;
-  }
-}
-.concert-list__venue {
-  margin-top: 0.5rem;
-  font-size: 0.81rem;
-  color: #000000;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__venue {
-    font-size: 0.87rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__venue {
-    font-size: 0.87rem;
-  }
-}
-.concert-list__location {
-  margin-top: 0.5rem;
-  font-size: 0.81rem;
-  color: #000000;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__location {
-    font-size: 0.87rem;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__location {
-    font-size: 0.87rem;
-  }
-}
-.concert-list__buyBtn {
-  background-color: #323232;
-  color: #FFFFFF;
-  width: 100%;
-  border-radius: 0.25rem;
-  height: 2.5rem;
-  cursor: pointer;
-}
-.concert-list__buyBtn:hover {
-  background-color: #000000;
-}
-@media (max-width: 1280px) and (min-width: 768px) {
-  .concert-list__buyBtn {
-    max-width: 25%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .concert-list__buyBtn {
-    max-width: 25%;
-  }
 }/*# sourceMappingURL=shows.css.map */
